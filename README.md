@@ -6,5 +6,9 @@
 
 -----
 
-How to start scraper.py
+How to start scraper.py?<br/>
+This code works with python3.<br/>
+
+enther this commands<br/>
+<code>pip3 install telethon</code>
 
