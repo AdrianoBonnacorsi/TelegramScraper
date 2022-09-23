@@ -50,12 +50,12 @@ for i, g in enumerate(groups):
 print('')
 g_index = input(gr+"[+] Enter a Number: "+re)
 target_group=groups[int(g_index)]
-print(gr+'[+] Fetching Members ...')
+print(gr+'[+] Fetching Members')
 time.sleep(1)
 all_participants = []
 all_participants = client.iter_participants(target_group, aggressive=True)
 
-print(gr+'Saving in file ...')
+print(gr+'Saving file')
 time.sleep(1)
 with open("members.csv","w",encoding='UTF-8') as f:
     writer = csv.writer(f,delimiter=",",lineterminator="\n")
