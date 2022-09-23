@@ -23,7 +23,7 @@ if not client.is_user_authorized():
     client.send_code_request(phone)
     os.system('clear')
     banner()
-    client.sign_in(phone, input(gr+'[+] Enter the verification code: '+yo))
+    client.sign_in(phone, input(gr+'Enter the verification code: '+yo))
 os.system('clear')
 banner()
 chats = []
@@ -55,7 +55,7 @@ time.sleep(1)
 all_participants = []
 all_participants = client.iter_participants(target_group, aggressive=True)
 
-print(gr+'[+] Saving in file ...')
+print(gr+'Saving in file ...')
 time.sleep(1)
 with open("members.csv","w",encoding='UTF-8') as f:
     writer = csv.writer(f,delimiter=",",lineterminator="\n")
